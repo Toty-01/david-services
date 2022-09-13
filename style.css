@@ -322,9 +322,30 @@ polyline {
   }
 }
 /*------------------------------footer-------------------------------------*/
-.footer {
-
+.foot-container {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
 }
+.Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.Services-foot ul, .Contact-foot ul,.Horaires-foot ul { 
+  padding-left: 0;
+}
+.Services-foot li, .Contact-foot li,.Horaires-foot li {
+ list-style-type: none;
+ padding: 0.2rem;
+ text-align: center;
+}
+.fa-brands {
+  font-size: 2rem;
+  color: #000;
+}
+
+
 /*-----------------------------story--------------------------------*/
 /*.titre-inline {
   display: block;
@@ -609,7 +630,10 @@ iframe {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-  }
+  }.foot-container {
+    display: block;
+    width: 100%;
+ }
   .slideshow-container {
     margin-top: 8rem;
     margin-bottom: 0;

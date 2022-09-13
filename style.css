@@ -322,22 +322,8 @@ polyline {
   }
 }
 /*------------------------------footer-------------------------------------*/
-.footer-img {
-  width: 100%;
-  margin-bottom: -4rem;
-}
-.footer-txt {
-  position: relative;
-  bottom: 2rem;
-  margin-left: 4rem;
-}
-.footer-txt > a {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-}
-.footer-txt > a:hover, svg:hover {
-  color: aqua;
+.footer {
+
 }
 /*-----------------------------story--------------------------------*/
 /*.titre-inline {
@@ -680,17 +666,5 @@ iframe {
   }
   #alert{
     bottom: -58vh;
-  }
-  .footer-txt {
-    position: relative;
-    bottom: 0.5rem;
-    margin-left: 1rem;
-  }
-  .footer-img {
-    margin-bottom: -1.7rem;
-  }
-  .footer-txt > a {
-    color: white;
-    font-size: 1.2rem;
   }
 }

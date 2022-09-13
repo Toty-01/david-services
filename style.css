@@ -322,10 +322,18 @@ polyline {
   }
 }
 /*------------------------------footer-------------------------------------*/
+hr.footer-sep {
+  width: 90%;
+  height: 2px;
+}
+footer {
+  padding-bottom: 2rem;
+}
 .foot-container {
    display: flex;
    justify-content: space-around;
    width: 100%;
+   margin-bottom: 2rem;
 }
 .Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
   text-align: center;
@@ -342,7 +350,73 @@ polyline {
 }
 .fa-brands {
   font-size: 2rem;
-  color: #000;
+}
+.top-arrow {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  animation: arrow-mvmnt 3s ease-in-out infinite;
+}
+@keyframes arrow-mvmnt {
+  0% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+.top-arrow a {
+  color: grey;
+}
+.pag {
+  display: flex;
+  justify-content: center;
+}
+.pag a {
+  text-decoration: none;
+  color: #202020;
+  cursor: pointer;
+}
+.pag a:hover {
+  color: whitesmoke;
+}
+.pag ul {
+  list-style-type: none;
+  display: flex;
+  padding: 8px;
+  border-radius: 4rem;
+  background-color: rgb(2, 156, 222);
+  cursor: default;
+}
+.pag ul li {
+  list-style-type: none;
+  line-height: 45px;
+  text-align: center;
+}
+.pag ul li.numb {
+  height: 45px;
+  width: 30px;
+}
+.fa-solid.fa-check {
+  color: green;
+}
+.fa-solid.fa-xmark {
+  color: red;
+}
+.side-pag-left {
+  padding-left: 1rem;
+}
+.side-pag-right {
+  padding-right: 1rem;
 }
 
 
@@ -630,9 +704,18 @@ iframe {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-  }.foot-container {
+  }
+  .foot-container {
     display: block;
     width: 100%;
+ }
+ .Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
+   text-align: center;
+   margin: 1rem;
+   font-size: 2rem;
+ }
+ .Services-foot, .Contact-foot,.Horaires-foot {
+  margin-bottom: 2rem;
  }
   .slideshow-container {
     margin-top: 8rem;

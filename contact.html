@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css.map">
     <link rel="shortcut icon" href="./logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Lobster&family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <title>davidservices01</title>
 </head>
 <body>
@@ -28,21 +30,18 @@
         </button>    
      </nav>
   </header>
- <div class="contact-bg">
-<div class="titre">
-  <h1><b>DAVID SERVICES</b></h1>
-</div>
 
-<hr>
+ <div class="contact-bg">
+  <div class="titre">
+    <h1 class="contact-title"><b>DAVID SERVICES</b></h1>
+  </div>
+
+<hr class="mx-auto mt-5 mb-5">
 
   <div class="content">
     <h2><i class="fa-solid fa-phone"></i> Coordonnées / réseaux sociaux</h2>
       <div class="com-ancre">   
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 
-              9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-              </svg> E-mail :</p> 
+            <p><i class="fa-solid fa-envelope"></i> E-mail :</p> 
               <p id="text1">davidservices01@orange.fr</p>
               <a href="mailto:davidservices01@orange.fr">
                 <button type="submit">Envoyer un mail</button>
@@ -60,11 +59,7 @@
               <a href="tel:+33617756143">
                 <button type="phone">Appeler</button>
               </a>
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="40" height="40"viewBox="0 -2 55 40"style=" fill:#000000;">
-                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
-                </svg>  Facebook
-              </p>
+              <p><i class="fa-brands fa-facebook"></i> Facebook</p>
               <a href="https://www.facebook.com/David-Services-245123002260382/?__cft__[0]=AZW9HWFje6A4URSvbBvluY-uCTVZqy2y5NrSkdDbQF96Utbxor_r_
               nSMXAuUR1QQnxFxu5zx83QhbzGTseL65AXRyM4agyefNrmcvxzTeo02ThUYefZL5Uz2BweYC_6L_a0&__tn__=-UC%2CP-R" target="_blank">
                 <button type="submit">Lien facebook</button>
@@ -72,15 +67,102 @@
        </div>
   </div>
 
-  <hr>
+  <hr class="mx-auto mt-5 mb-5">
 
+    <h2>Me contacter :</h2>
+    <h3 class="text-center mt-5 mb-5">Laissez moi vos coordonnées et je vous recontacterais au plus vite</h3>
+
+  <div class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center">
+
+    <form class="row g-3 needs-validation" id="lessonForm" 
+    action="https://formspree.io/f/mgeqvopy" 
+    method="post"
+    novalidate>
+        <div class="col-md-6">
+            <label for="firstname" class="form-label">Prénom :</label>
+            <input type="text" class="form-control" name="firstName" id="firstName">
+            <div class="invalid-feedback">
+                Veuillez saisir votre prénom.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="lastname" class="form-label">Nom :</label>
+            <input type="text" class="form-control" name="lastName" id="lastName">
+            <div class="invalid-feedback">
+                Veuillez saisir votre nom.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">E-mail :</label>
+            <input type="email" class="form-control" name="email" id="email">
+            <div class="invalid-feedback">
+                Veuillez saisir votre e-mail.
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Téléphone :</label>
+            <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+            <div class="invalid-feedback">
+                Veuillez saisir votre numéro de téléphone.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="address" class="form-label">Adresse :</label>
+            <input type="email" class="form-control" name="address" id="address">
+            <div class="invalid-feedback">
+                Veuillez saisir votre adresse.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="postcode" class="form-label">Code postal :</label>
+            <input type="text" class="form-control" name="postCode" id="postCode">
+            <div class="invalid-feedback">
+                Veuillez saisir votre code postal.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="prestation" class="form-label">Prestation :</label>
+            <select class="form-control" name="prestation" id="prestation">
+                <option selected disabled value="">Votre besoin concerne :</option>
+                <option>Pose de douche</option>
+                <option>Pose de parquet</option>
+                <option>Pose de cuisine</option>
+                <option>Salle de bain</option>
+                <option>Carrelage</option>
+                <option>Autre</option>
+            </select>
+            <div class="invalid-feedback">
+                Veuillez choisir une prestation.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="m-5 form-check">
+                <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
+                <label class="form-check-label" for="conditions">Je valide le formulaire</label>
+                <div class="invalid-feedback">
+                    Merci de cocher pour valider le formulaire.
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary w-25 m-3 p-3">Valider</button>
+        </div>
+    </form>
+</div>
+
+<hr class="mx-auto mt-5 mb-5">
+
+    <h2 class="mb-4">Qui sont mes partenaires ??</h2>
   <div class="partenaire-btn">
-  <a href="./partenaires.html">
-    <button class="partenaires">Mes partenaires</button>
-  </a>
+    <a href="./partenaires.html">
+      <button class="partenaires">Mes partenaires</button>
+    </a>
   </div>
 
-<hr class="footer-sep">
+<hr class="footer-sep mx-auto">
 
 <footer> 
 
@@ -108,7 +190,7 @@
        <li>davidservices01@orange.fr</li>
        <li>Adresse :</li>
        <li>All. des Trembles, 01500 Ambronay</li>
-       <li>Facebook</li>
+       <br>
        <li><a href="https://www.facebook.com/David-Services-245123002260382/?__cft__[0]=AZW9HWFje6A4URSvbBvluY-uCTVZqy2y5NrSkdDbQF96Utbxor_r_
          nSMXAuUR1QQnxFxu5zx83QhbzGTseL65AXRyM4agyefNrmcvxzTeo02ThUYefZL5Uz2BweYC_6L_a0&__tn__=-UC%2CP-R" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
      </ul>
@@ -147,5 +229,8 @@
 
 </footer>
 </body>
+<script src="./bootstrap/bootstrap.js.map"></script>
+<script src="./bootstrap/bootstrap.js"></script>
+<script src="form.js"></script>
 <script src="mainScript.js"></script>
 </html>

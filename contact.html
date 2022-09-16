@@ -43,22 +43,30 @@
       <div class="com-ancre">   
             <p><i class="fa-solid fa-envelope"></i> E-mail :</p> 
               <p id="text1">davidservices01@orange.fr</p>
-              <a href="mailto:davidservices01@orange.fr">
-                <button type="submit">Envoyer un mail</button>
-              </a>
-              <br>
-               <a>
-                <button type="submit"  onclick="copy('text1')">Copier le mail</button>
-              </a>
+
+              <div class="btns">
+                <a href="mailto:davidservices01@orange.fr">
+                  <button type="submit">Envoyer un mail</button>
+                </a>
+                
+                <a>
+                  <button type="submit"  onclick="copy('text1')">Copier le mail</button>
+                </a>
+              </div>
+
               <p><i class="fa fa-mobile" aria-hidden="true"></i> Portable :</p><p id="text2">06 17 75 61 43</p>
               <p id="alert">Text Copied!</p>
-              <a>
-                <button type="submit"  onclick="copy('text2')">Copier numero</button>
-              </a>
-              <br>
-              <a href="tel:+33617756143">
-                <button type="phone">Appeler</button>
-              </a>
+
+              <div class="btns">
+                <a>
+                  <button type="submit"  onclick="copy('text2')">Copier numero</button>
+                </a>
+
+                <a href="tel:+33617756143">
+                  <button type="phone">Appeler</button>
+                </a>
+              </div>
+ 
               <p><i class="fa-brands fa-facebook"></i> Facebook</p>
               <a href="https://www.facebook.com/David-Services-245123002260382/?__cft__[0]=AZW9HWFje6A4URSvbBvluY-uCTVZqy2y5NrSkdDbQF96Utbxor_r_
               nSMXAuUR1QQnxFxu5zx83QhbzGTseL65AXRyM4agyefNrmcvxzTeo02ThUYefZL5Uz2BweYC_6L_a0&__tn__=-UC%2CP-R" target="_blank">
@@ -70,9 +78,9 @@
   <hr class="mx-auto mt-5 mb-5">
 
     <h2>Me contacter :</h2>
-    <h3 class="text-center mt-5 mb-5">Laissez moi vos coordonnées et je vous recontacterais au plus vite</h3>
+    <h3 class="text-center m-5">Laissez moi vos coordonnées et je vous recontacterais au plus vite</h3>
 
-  <div class="container d-flex flex-collumn min-vh-100 justify-content-center align-items-center">
+  <div class="container d-flex flex-collumn justify-content-center align-items-center mt-5">
 
     <form class="row g-3 needs-validation" id="lessonForm" 
     action="https://formspree.io/f/mgeqvopy" 
@@ -109,20 +117,7 @@
                 Veuillez saisir votre numéro de téléphone.
             </div>
         </div>
-        <div class="col-md-6">
-            <label for="address" class="form-label">Adresse :</label>
-            <input type="email" class="form-control" name="address" id="address">
-            <div class="invalid-feedback">
-                Veuillez saisir votre adresse.
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label for="postcode" class="form-label">Code postal :</label>
-            <input type="text" class="form-control" name="postCode" id="postCode">
-            <div class="invalid-feedback">
-                Veuillez saisir votre code postal.
-            </div>
-        </div>
+
         <div class="col-md-6">
             <label for="prestation" class="form-label">Prestation :</label>
             <select class="form-control" name="prestation" id="prestation">
@@ -138,6 +133,13 @@
                 Veuillez choisir une prestation.
             </div>
         </div>
+        <div class="col-md-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Commentaire :</label>
+          <textarea class="form-control" name="Commentaire" id="Commentaire" rows="3"></textarea>
+          <div class="invalid-feedback">
+            Merci de mettre au moins 2 caractères
+        </div>
+        </div>
         <div class="col-12">
             <div class="m-5 form-check">
                 <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
@@ -145,6 +147,9 @@
                 <div class="invalid-feedback">
                     Merci de cocher pour valider le formulaire.
                 </div>
+                <div class="valid-feedback">
+                  Merci d'avoir coché le formulaire
+              </div>
             </div>
         </div>
         <div class="text-center">

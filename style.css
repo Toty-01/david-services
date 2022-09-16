@@ -458,15 +458,12 @@ footer {
 }
 .btn button {
   cursor: pointer;
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 0.7rem;
   background-color: rgb(45, 109, 247);
   color: aliceblue;
   font-size: 1.2rem;
   box-shadow: 2px 2px rgb(26, 26, 26);
-}
-.btn button:hover {
-  color: rgb(34, 34, 34);
 }
 
 /*-------------------contact---------------------------------*/
@@ -498,7 +495,7 @@ footer {
   font-weight: bolder;
   margin-bottom: 6rem;
 }
-.com-ancre > a > button, button.partenaires {
+.com-ancre > a > button, button.partenaires, .btns > a > button {
   background-color: rgb(45, 109, 247);
   color: white;
   font-size: 1.2rem;
@@ -517,7 +514,7 @@ footer {
   justify-content: center;
   margin-bottom: 4rem;
 }
-.com-ancre > a > button:hover, button.partenaires:hover {
+.com-ancre > a > button:hover, button.partenaires:hover, .btns > a > button:hover, .btn button:hover {
   cursor: pointer;
   background-color: rgb(53, 53, 255);
   transform: scale(1.02);
@@ -545,12 +542,15 @@ footer {
 }
 
 /*-------------------------map------------------------------*/
-
+.essai {
+  overflow-x: hidden;
+}
 .text-card {
   display: flex;
   width: 100%;
   margin-left: 2em;
   text-align: left;
+  overflow-x: hidden;
 }
 .zone-title {
   margin-bottom: 5rem;
@@ -579,11 +579,10 @@ footer {
 }
 .map {
   width: 50%;
-  margin-left: 2rem;
-  margin-bottom: -3px;
+  padding-top: 2rem;
 }
 iframe {
-  width: 75%;
+  width: 90%;
 }
 /* -----------------medium size ------------------------*/
   
@@ -714,15 +713,15 @@ iframe {
   .foot-container {
     display: block;
     width: 100%;
- }
- .Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
-   text-align: center;
-   margin: 1rem;
-   font-size: 2rem;
- }
- .Services-foot, .Contact-foot,.Horaires-foot {
-  margin-bottom: 2rem;
- }
+  }
+  .Services-foot h3, .Contact-foot h3,.Horaires-foot h3 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .Services-foot, .Contact-foot,.Horaires-foot {
+    margin-bottom: 2rem;
+  }
   .slideshow-container {
     margin-top: 8rem;
     margin-bottom: 0;
@@ -776,8 +775,5 @@ iframe {
   }
   #text1 {
     font-size: 1.5rem;
-  }
-  #alert{
-    bottom: -58vh;
   }
 }

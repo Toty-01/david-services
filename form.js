@@ -54,6 +54,7 @@
         return !(POSAT < 1 || (POSDOT - POSAT < 2));
     }
 
+    /*
     // Validation Code Postal
     function validatePostCode(input) {
         return input.value.match("^(0[1-9]|[1-9][0-9])[0-9][0-9][0-9]$");
@@ -63,6 +64,7 @@
     function validateAddress(input) {
         return input.value.match(/^\s*\S+(?:\s+\S+){2}/);
     }
+    */
 
     // Validation du Numéro de téléphone
     function validatePhoneNumber(input) {
@@ -140,20 +142,20 @@
             return (true);
         }
 
-        // Validaton de l'input ADRESSE
-        if (fieldName == "address") {
+        // Validaton de l'input commentaire
+        if (fieldName == "Commentaire") {
 
             if (!validateRequired(input)) {
                 return false;
             }
-
-            if (!validateAddress(input)) {
+       
+            if (!validateLenght(input, 2, 300)) {
                 return false;
             }
 
             return (true);
         }
-
+/*
         // Validaton de l'input CODE POSTAL
         if (fieldName == "postCode") {
 
@@ -167,7 +169,7 @@
 
             return (true);
         }
-
+*/
         // Validaton de l'input prestation
         if (fieldName == "prestation") {
             if (!validateRequired(input)) {

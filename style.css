@@ -267,10 +267,6 @@ polyline {
   animation-name: fade;
   animation-duration: 2.5s;
 }
-@keyframes fade {
-  from {opacity: .1}
-  to {opacity: 1}
-}
 /*------------------slider infini bas de page-------------------------*/
 .slider-bottom {
   overflow: hidden;

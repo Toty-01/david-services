@@ -15,19 +15,38 @@
 </head>
   <body>
     <header>       
-      <nav class="navbar light-mode" role="navigation">
-        <div class="navbar_logo"><a href="index.html"><img class="logo-entete" src="logo.jpg" alt=""></a></div>
-          <ul class="navbar_links">
-            <li class="navbar_link"><a href="index.html" class="is active"><i class="fa-solid fa-house"></i> Accueil</a></li>
-            <li class="navbar_link"><a href="zone.html"><i class="fa-solid fa-truck-fast"></i> Zone d activité</a></li>
-            <li class="navbar_link"><a href="histoire.html"><i class="fa-solid fa-signs-post"></i> Parcours</a></li>
-            <li class="navbar_link"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
-          </ul>
-          <button class="burger">
-            <span class="bar"></span>
-          </button>    
-       </nav>
-    </header>
+      <nav class='navbar'>
+         
+       <div class="navbar_logo">
+         <a href="./index.html"><img class="logo" src="logo.jpg"/></a>
+       </div>
+ 
+       <ul class="navbar_links">
+ 
+         <li class="navbar_item slideInDown-2">
+           <a href="./index.html" class="navbar_link">
+             <i class="fa-solid fa-house"></i> Accueil
+           </a>
+         </li>
+ 
+         <li class="navbar_item slideInDown-1">
+           <a href="./galerie.html" class="navbar_link">
+             <i class="fa-solid fa-truck-fast"></i> Zone d'activité
+           </a>
+         </li>
+ 
+         <li class="navbar_item slideInDown-2">
+           <a href="./evenements.html" class="navbar_link active">
+             <i class="fa-solid fa-phone"></i> Contact
+           </a>
+         </li>
+ 
+       </ul>
+       <button class='navbar_burger'>
+         <span class="burger-bar"></span>
+       </button>
+     </nav>
+   </header>
   <div class="main-content">
     <div class="bg">
       <div class="titre">
@@ -208,8 +227,7 @@
     <ul>
       <li class="numb"><span>1</span></li>
       <a href="zone.html"><li class="numb"><span>2</span></li></a>
-      <a href="histoire.html"><li class="numb"><span>3</span></li></a>
-      <a href="contact.html"><li class="numb"><span>4</span></li></a>
+      <a href="contact.html"><li class="numb"><span>3</span></li></a>
       <a href="zone.html"><li><span class="side-pag-right">Next <i class="fas fa-angle-right"></i></span></li></a>
     </ul>
   </div>

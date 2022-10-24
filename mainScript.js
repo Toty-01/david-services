@@ -1,11 +1,23 @@
 function toggleMenu() {
   const navbar = document.querySelector('.navbar');
-  const burger = document.querySelector('.burger');
+  const burger = document.querySelector('.navbar_burger');
   burger.addEventListener('click', () => {
     navbar.classList.toggle('show-nav');
   })
 }
 toggleMenu();
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-84px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 
 let slideIndex = 1;
 showSlides(slideIndex);

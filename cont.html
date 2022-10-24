@@ -16,18 +16,37 @@
 </head>
 <body>
   <header>       
-    <nav class="navbar light-mode" role="navigation">
-      <div class="navbar_logo"><a href="index.html"><img class="logo-entete" src="logo.jpg" alt=""></a></div>
-        <ul class="navbar_links">
-          <li class="navbar_link"><a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
-          <li class="navbar_link"><a href="zone.html"><i class="fa-solid fa-truck-fast"></i> Zone d activité</a></li>
-          <li class="navbar_link"><a href="histoire.html"><i class="fa-solid fa-signs-post"></i> Parcours</a></li>
-          <li class="navbar_link"><a href="contact.html" class="is active"><i class="fa-solid fa-phone"></i> Contact</a></li>
-        </ul>
-        <button class="burger">
-          <span class="bar"></span>
-        </button>    
-     </nav>
+     <nav class='navbar'>
+        
+      <div class="navbar_logo">
+        <a href="./index.html"><img class="logo" src="logo.jpg"/></a>
+      </div>
+
+      <ul class="navbar_links">
+
+        <li class="navbar_item slideInDown-2">
+          <a href="./index.html" class="navbar_link">
+            <i class="fa-solid fa-house"></i> Accueil
+          </a>
+        </li>
+
+        <li class="navbar_item slideInDown-1">
+          <a href="./galerie.html" class="navbar_link">
+            <i class="fa-solid fa-truck-fast"></i> Zone d'activité
+          </a>
+        </li>
+
+        <li class="navbar_item slideInDown-2">
+          <a href="./evenements.html" class="navbar_link active">
+            <i class="fa-solid fa-phone"></i> Contact
+          </a>
+        </li>
+
+      </ul>
+      <button class='navbar_burger'>
+        <span class="burger-bar"></span>
+      </button>
+    </nav>
   </header>
 
  <div class="contact-bg">
@@ -44,6 +63,7 @@
               <p id="text1">davidservices01@orange.fr</p>
 
               <div class="btns">
+
                 <a href="mailto:davidservices01@orange.fr">
                   <button type="submit">Envoyer un mail</button>
                 </a>
@@ -51,6 +71,7 @@
                 <a>
                   <button type="submit"  onclick="copy('text1')">Copier le mail</button>
                 </a>
+                
               </div>
 
               <p><i class="fa fa-mobile" aria-hidden="true"></i> Portable :</p><p id="text2">06 17 75 61 43</p>
@@ -223,11 +244,10 @@
 
  <div class="pag">
     <ul>
-      <a href="histoire.html"><li><span class="side-pag-left"><i class="fas fa-angle-left"></i> Prev</span></li></a>
+      <a href="zone.html"><li><span class="side-pag-left"><i class="fas fa-angle-left"></i> Prev</span></li></a>
       <a href="index.html"><li class="numb"><span>1</span></li></a>
       <a href="zone.html"><li class="numb"><span>2</span></li></a>
-      <a href="histoire.html"><li class="numb"><span>3</span></li></a>
-      <li class="numb"><span>4</span></li>
+      <li class="numb"><span>3</span></li>
     </ul>
  </div>
 

@@ -28,10 +28,7 @@ a, p, li {
   position: fixed;
   width: 100%;
   min-height: 75px;
-  background: #1e5dfa;
-  background: linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  background: -webkit-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
-  background: -moz-linear-gradient(271deg,#1e5dfa 0%, #042e9f 80%);
+  background: rgba(0,141,255,0.9);
   transition: top 0.5s;
   z-index: 4;
 }
@@ -47,8 +44,11 @@ a, p, li {
   font-weight: 600;
 }
 .navbar_link.active, .navbar_link:hover {
-  color: #D31E03;
+  color: #282c34;
   background-color: inherit;
+}
+.navbar_link.active {
+  cursor: default;
 }
 .navbar_item {
   list-style: none;
@@ -73,9 +73,10 @@ h1, h2 {
   text-align: center;
 }
 h1, .contact-title {
-font-size: 3.6rem;
-margin-top: 10rem;
-margin-bottom: 10rem;font-family: 'Orbitron', sans-serif;
+  font-size: 3.6rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;font-family: 'Orbitron', sans-serif;
+  color: #282c34;
 }
 h2 {
   font-size: 2rem;
@@ -276,7 +277,6 @@ polyline {
   margin-left: auto;
   margin-right: auto;
   height: 500px;
-  margin-bottom: 6rem;
   border-radius: 1rem;
 }
 .sliderInfinite {
@@ -290,7 +290,7 @@ polyline {
   overflow: hidden;
   float: left;
   width: 25%;
-  height: 650px;
+  height: auto;
   object-fit: cover;
   margin-bottom: 4rem;
 }
@@ -331,9 +331,12 @@ hr.footer-sep {
 }
 footer {
   padding-bottom: 2rem;
-  background-color: rgb(34, 34, 34);
-  color: beige;
+  background: rgb(0,141,255);
+  color: aliceblue;
   padding-top: 4rem;
+}
+footer h3 {
+  text-shadow: 1px 1px #282c34;
 }
 .foot-container {
    display: flex;
@@ -356,6 +359,9 @@ footer {
 }
 .fa-brands {
   font-size: 2.5rem;
+}
+.fcbk-footer {
+  color: inherit;
 }
 .top-arrow {
   text-align: center;
@@ -381,7 +387,7 @@ footer {
   }
 }
 .top-arrow a {
-  color: grey;
+  color: #282c34;
 }
 .pag {
   display: flex;
@@ -393,20 +399,21 @@ footer {
   cursor: pointer;
 }
 .pag a:hover {
-  color: whitesmoke;
+  color: aliceblue;
 }
 .pag ul {
   list-style-type: none;
   display: flex;
   padding: 8px;
   border-radius: 4rem;
-  background-color: rgb(2, 156, 222);
+  background-color: rgba(0,239,255,0.78);
   cursor: default;
 }
 .pag ul li {
   list-style-type: none;
   line-height: 45px;
   text-align: center;
+  font-size: 1.1rem;
 }
 .pag ul li.numb {
   height: 45px;
@@ -423,43 +430,6 @@ footer {
 }
 .side-pag-right {
   padding-right: 1rem;
-}
-
-/*-----------------------------story--------------------------------*/
-.story-section {
-  margin-bottom: 3rem;
-}
-.section-title {
-  font-weight: 300;
-  font-size: 3rem;
-  margin: 4rem;
-}
-.story-main-title {
-  font-size: 4rem;
-  margin-bottom: 8rem;
-}
-.section-title, p {
-  text-align: center;
-}
-.story-section p {
-  font-size: 1.5rem;
-  margin-left: 8rem;
-  margin-right: 8rem;
-  padding-bottom: 1rem;
-}
-.btn {
-  margin: 4rem;
-  display: flex;
-  justify-content: center;
-}
-.btn button {
-  cursor: pointer;
-  padding: 1.6rem;
-  border-radius: 0.7rem;
-  background-color: rgb(45, 109, 247);
-  color: aliceblue;
-  font-size: 1.2rem;
-  box-shadow: 2px 2px rgb(26, 26, 26);
 }
 
 /*-------------------contact---------------------------------*/
@@ -491,35 +461,23 @@ footer {
   font-weight: bolder;
   margin-bottom: 6rem;
 }
-.com-ancre > a > button, button.partenaires, .btns > a > button {
-  background-color: rgb(45, 109, 247);
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  border-radius: 0.5rem;
-  margin: 1rem;
-  box-shadow: 2px 2px rgb(60, 60, 92);
-  transition: transform .2s;
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+.btns > a {
+  margin: 2rem;
 }
 .partenaire-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
 }
-.com-ancre > a > button:hover, button.partenaires:hover, .btns > a > button:hover, .btn button:hover {
-  cursor: pointer;
-  background-color: rgb(53, 53, 255);
-  transform: scale(1.02);
-  color: #000;
-}
 #alert{
   width: 90%;
   text-align: center;
   background-color: #202020;
+  font-size: 1.4rem;
   color: #ffffff;
   margin: auto;
   left: 0;
@@ -527,11 +485,15 @@ footer {
   padding: 5px 0;
   display: none;
 }
-.com-ancre > a > button:active {
-  box-shadow: 0 0;
-  background-color: blueviolet;
-  color: white;
-  transform: translate(2px, 2px);
+.btns p {
+  font-size: 1.4rem;
+  color: #282c34;
+}
+.btns p i {
+  font-size: 2rem;
+}
+.btns p:hover {
+  cursor: pointer;
 }
 #text2 {
   font-weight: bolder;
@@ -621,13 +583,9 @@ iframe {
     bottom: 0;
     top: -1rem;
     width: 0;
-    height: 104vh;
+    height: 100vh;
     padding: 2rem;
-    visibility: hidden;
-    background: #1e5dfa;
-    background: linear-gradient(91deg,#1e5dfa 0%, #042e9f 80%);
-    background: -webkit-linear-gradient(91deg,#1e5dfa 0%, #042e9f 80%);
-    background: -moz-linear-gradient(91deg,#1e5dfa 0%, #042e9f 80%);
+    background: rgb(0,141,255);
     transition: all .5s ease-in-out;
   }
   .show-nav {
@@ -640,18 +598,19 @@ iframe {
   }
   .navbar_logo {
     justify-content: center;
-    width: 100%;
+    width: 50%;
+    z-index: 10;
   }
   .navbar_link {
     display: block;
-    padding: 1.5rem;
+    padding: 4rem;
     font-size: 5vw;
   }
   .navbar_item:after {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 3vw;
+    width: 10vw;
     height: 2px;
     background-color: azure;
   }
@@ -803,7 +762,7 @@ iframe {
   .map {
     width: 134%;
     margin-left: 0;
-    margin-bottom: 4rem;
+    margin-bottom: -4px;
   }
   .iframe {
     width: 100%;
@@ -814,7 +773,8 @@ iframe {
     margin-right: 2rem;
     padding-bottom: 1rem;
   }
-  #text1 {
+  #text1, #text2 {
     font-size: 1.5rem;
+    font-weight: 400;
   }
 }

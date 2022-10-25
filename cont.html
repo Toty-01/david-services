@@ -31,13 +31,13 @@
         </li>
 
         <li class="navbar_item slideInDown-1">
-          <a href="./galerie.html" class="navbar_link">
-            <i class="fa-solid fa-truck-fast"></i> Zone d'activité
+          <a href="./zone.html" class="navbar_link">
+            <i class="fa-solid fa-map-pin"></i> Zone d'activité
           </a>
         </li>
 
         <li class="navbar_item slideInDown-2">
-          <a href="./evenements.html" class="navbar_link active">
+          <a href="#" class="navbar_link active">
             <i class="fa-solid fa-phone"></i> Contact
           </a>
         </li>
@@ -58,43 +58,42 @@
 
   <div class="content">
     <h2><i class="fa-solid fa-phone"></i> Coordonnées</h2>
-      <div class="com-ancre">   
-            <p><i class="fa-solid fa-envelope"></i> E-mail :</p> 
+        <div class="com-ancre">   
+              <p><i class="fa-solid fa-envelope"></i> E-mail :</p> 
               <p id="text1">davidservices01@orange.fr</p>
 
               <div class="btns">
 
+                <p onclick="copy('text1')">
+                  Copier mail <i class="fa-regular fa-copy"></i>
+                </p>
+
                 <a href="mailto:davidservices01@orange.fr">
-                  <button type="submit">Envoyer un mail</button>
-                </a>
-                
-                <a>
-                  <button type="submit"  onclick="copy('text1')">Copier le mail</button>
+                  Envoyer un mail
                 </a>
                 
               </div>
 
               <p><i class="fa fa-mobile" aria-hidden="true"></i> Portable :</p><p id="text2">06 17 75 61 43</p>
-              <p id="alert">Text Copied!</p>
+              <p id="alert">Texte Copié</p>
 
               <div class="btns">
-                <a>
-                  <button type="submit"  onclick="copy('text2')">Copier numero</button>
-                </a>
+                <p onclick="copy('text2')">
+                 Copier numero <i class="fa-regular fa-copy"></i>
+                </p>
 
-                <a href="tel:+33617756143">
-                  <button type="phone">Appeler</button>
+                <a href="tel:+33617756143" type="phone">
+                  <button>Appeler</button>
                 </a>
               </div>
               
               <h2>Réseaux sociaux</h2>
 
-              <p><i class="fa-brands fa-facebook"></i> Facebook</p>
               <a href="https://www.facebook.com/David-Services-245123002260382/?__cft__[0]=AZW9HWFje6A4URSvbBvluY-uCTVZqy2y5NrSkdDbQF96Utbxor_r_
               nSMXAuUR1QQnxFxu5zx83QhbzGTseL65AXRyM4agyefNrmcvxzTeo02ThUYefZL5Uz2BweYC_6L_a0&__tn__=-UC%2CP-R" target="_blank">
-                <button type="submit">Lien facebook</button>
+                <i class="fa-brands fa-facebook"></i>
               </a>
-       </div>
+        </div>
   </div>
 
   <hr class="mx-auto mt-5 mb-5">
@@ -170,7 +169,7 @@
                     Merci de cocher pour valider le formulaire.
                 </div>
                 <div class="valid-feedback">
-                  Merci d'avoir coché le formulaire
+                  Merci d'avoir validé le formulaire
               </div>
             </div>
         </div>
@@ -179,15 +178,6 @@
         </div>
     </form>
 </div>
-
-<hr class="mx-auto mt-5 mb-5">
-
-    <h2 class="mb-4">Qui sont mes partenaires ??</h2>
-  <div class="partenaire-btn">
-    <a href="./partenaires.html">
-      <button class="partenaires">Mes partenaires</button>
-    </a>
-  </div>
 
 <hr class="footer-sep mx-auto">
 
@@ -219,7 +209,7 @@
        <li>All. des Trembles, 01500 Ambronay</li>
        <br>
        <li><a href="https://www.facebook.com/David-Services-245123002260382/?__cft__[0]=AZW9HWFje6A4URSvbBvluY-uCTVZqy2y5NrSkdDbQF96Utbxor_r_
-         nSMXAuUR1QQnxFxu5zx83QhbzGTseL65AXRyM4agyefNrmcvxzTeo02ThUYefZL5Uz2BweYC_6L_a0&__tn__=-UC%2CP-R" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+         nSMXAuUR1QQnxFxu5zx83QhbzGTseL65AXRyM4agyefNrmcvxzTeo02ThUYefZL5Uz2BweYC_6L_a0&__tn__=-UC%2CP-R" class="fcbk-footer" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
      </ul>
    </div>
 

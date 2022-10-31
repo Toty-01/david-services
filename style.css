@@ -79,6 +79,12 @@ a, p, li {
 h1, h2 {
   text-align: center;
 }
+.main-title {
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
 h1, .contact-title {
   font-size: 3.6rem;
   margin-top: 10rem;
@@ -158,124 +164,6 @@ aside {
   width: 75%;
   margin-right: 0;
 }
-/*-------------slider---------------*/
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  margin-right: 3rem;
-}
-.numbertext h2 {
-  margin: 6px;
-  font-size: 1.5rem;
-}
-button {
-  border: 0;
-}
-.arrows-Bckg {
-  padding: 4px;
-  margin: 4px;
-}
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  background-color: rgb(150, 148, 148);
-  border-radius: 2rem;
-}
-.left, .right {  
-  position: absolute;
-  top: 58%;
-}
-.left {
-  left: 0;
-}
-.right {
-  right: 0;
-}
-.left:hover polyline,
-.left:focus polyline {
-  stroke-width: 8;
-}
-.left:active polyline {
-  stroke-width: 14;
-  transition: all .6s ease-in-out;
-}
-.right:hover polyline,
-.right:focus polyline {
-  stroke-width: 8;
-}
-.right:active polyline {
-  stroke-width: 14;
-  transition: all .6s ease-in-out;
-}
-polyline {
-  transition: all .6s ease-in-out;
-}
-.img-slider {
-  border-radius: 1rem;
-}
-.mySlides {
-  display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.4;
-}
-.next {
-  left: 259px;
-  border-radius: 8px 0 0 8px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: #ececec;
-}
-.text {
-  color: #ffffff;
-  font-size: 1.2rem;
-  padding: 12px 12px;
-  position: absolute;
-  bottom: 1.5rem;
-  text-align: center;
-}
-.numbertext {
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.dots {
-  margin-left: 2.5rem;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
 /*------------------slider infini bas de page-------------------------*/
 .slider-bottom {
   overflow: hidden;
@@ -343,7 +231,8 @@ footer {
   padding-top: 4rem;
 }
 footer h3 {
-  text-shadow: 1px 1px #282c34;
+  text-shadow: 1px 1px grey;
+  color: rgb(30, 30, 30);
 }
 .foot-container {
    display: flex;
@@ -369,6 +258,9 @@ footer h3 {
 }
 .fcbk-footer {
   color: inherit;
+}
+.fa-square-facebook:hover {
+  animation:rotate-center .6s ease-in-out both;
 }
 .top-arrow {
   text-align: center;
@@ -438,10 +330,18 @@ footer h3 {
 .side-pag-right {
   padding-right: 1rem;
 }
-
 /*-------------------contact---------------------------------*/
 .content {
   text-align: center;
+  margin-top: 6rem !important;
+}
+.content h2 {
+  margin-top: 4rem !important;
+}
+.content > h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 6rem;
 }
 .content > a {
   text-align: center;
@@ -453,6 +353,12 @@ footer h3 {
  height: 100%;
  border: 2px rgb(255, 255, 255);
 }
+.block-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
 .com-ancre > p {
   text-align: center;
   font-size: 2rem;
@@ -463,18 +369,112 @@ footer h3 {
   color: rgb(0, 0, 0);
   margin-bottom: -2.6px;
 }
-.content > h2 {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  margin-bottom: 6rem;
-}
 .btns {
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+}
+.blocks-contact {
+  border-top: 2px solid #3e60f3;
+  border-bottom: 2px solid #282c34;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .btns > a {
   margin: 2rem;
+} 
+.btns.one a {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: aliceblue;
+  background-color: #717171;
+  width: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 2px;
+  border-radius: 0.6rem;
 }
+.btns.one a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,141,255);
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.6rem;
+  transform-origin: right;
+}
+.btns.one a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btns.one a span {
+  display: inline-block;
+  z-index: 2;
+  transition: all 0.5 ease-in-out;
+}
+.btns.one a:hover span {
+  color: aliceblue;
+}
+.btns.one a i {
+  position: relative;
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: #282c34;
+  transition: 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 0s, 0.5s, 1s;
+}
+.btns.one a:hover i {
+  width: 40px;
+  height: 2px;
+  transition-delay: 0s, 1s, 0.5s;
+}
+.btns.one a i::before {
+  content: '';
+  position: absolute;
+  top: 0.5px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background: transparent;
+  rotate: 0;
+  transform-origin: right;
+  transition: 1s;
+}
+.btns.one a:hover i::before {
+  background: #282c34;
+  rotate: 45deg;
+  transition-delay: 1.5s;
+}
+.btns.one a i::after {
+  content: '';
+  position: absolute;
+  top: -0.5px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background: transparent;
+  rotate: 0;
+  transform-origin: right;
+  transition: 1s;
+}
+.btns.one a:hover i::after {
+  background: #282c34;
+  rotate: -45deg;
+  transition-delay: 1.5s;
+}
+
 .partenaire-btn {
   display: flex;
   justify-content: center;
@@ -496,14 +496,32 @@ footer h3 {
   font-size: 1.4rem;
   color: #282c34;
 }
-.btns p i {
+.blocks-contact > p:first-child {
+  font-size: 2rem;
+}
+.blocks-contact p i {
   font-size: 2rem;
 }
 .btns p:hover {
   cursor: pointer;
 }
-#text2 {
-  font-weight: bolder;
+#text2, #text1 {
+  font-size: 1.6rem;
+}
+.fa-facebook {
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+.fa-facebook:hover {
+    animation:rotate-center .6s ease-in-out both;
+}
+@keyframes rotate-center {
+  0% {
+    transform:rotate(0) 
+  }
+  100% {
+    transform:rotate(360deg)
+  }
 }
 
 /*-------------------------map------------------------------*/
@@ -557,10 +575,6 @@ iframe {
     padding-right: 3rem;
     margin-right: 3rem;
     margin-left: 8rem;
-  }
-  .slideshow-container{
-    margin-right: 10rem;
-    width: 30%;
   }
   .contenu {
     margin-left: 3rem;
@@ -734,13 +748,6 @@ iframe {
   .Services-foot, .Contact-foot,.Horaires-foot {
     margin-bottom: 2rem;
   }
-  .slideshow-container {
-    margin-top: 8rem;
-    margin-bottom: 0;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .mySlides.fade {
     width: fit-content;
   }
@@ -784,6 +791,9 @@ iframe {
     margin-left: 2rem;
     margin-right: 2rem;
     padding-bottom: 1rem;
+  }
+  .blocks-contact {
+    width: 100%;
   }
   #text1, #text2 {
     font-size: 1.5rem;

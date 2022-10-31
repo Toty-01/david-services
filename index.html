@@ -7,6 +7,7 @@
     <meta name="description" content="Artisan dans l'ain et ses environs. Carrelage, rénovations de douches, parquets, plomberie, etc..">
     <link rel="shortcut icon" href="./logo.jpg">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +16,13 @@
 </head>
   <body>
     <header>       
-      <nav class='navbar'>
+      <nav class='navbar fixed-top  cont'>
          
-       <div class="navbar_logo">
+       <div class="navbar_logo  cont">
          <a href="./index.html"><img class="logo" src="logo.jpg"/></a>
        </div>
  
-       <ul class="navbar_links">
+       <ul class="navbar_links cont">
  
          <li class="navbar_item slideInDown-2">
            <a href="./index.html" class="navbar_link active">
@@ -47,14 +48,15 @@
        </button>
      </nav>
    </header>
+
   <div class="main-content">
     <div class="bg">
       <div class="titre">
-        <h1 class="main-tittle">DAVID SERVICES</h1>
+        <h1 class="main-title">DAVID SERVICES</h1>
       </div>
     </div>
 
-    <hr>
+    <hr class="mx-auto">
 
     <main>
 
@@ -75,7 +77,7 @@
               <li>Plomberie</li>
               <li>Electricité</li>
               <li>Placo</li>
-              <li>Maconnerie</li>
+              <li>Maçonnerie</li>
               <li>Parquet</li>
               <li>Carrelage</li>
               <li>Peinture</li>
@@ -84,82 +86,13 @@
             </ul>
         </article>
 
-      </div>          
-
-        <div class="slideshow-container">
-
-          <div class="mySlides fade">
-            <div class="numbertext"><h2>Mes réasilastions</h2>1 / 10</div>
-            <img class="img-slider" src="./pic/slider/ancienne baignoire + lavabo.jpg" style="width:300px">
-            <div class="text">Ancienne salle de bain</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 10</div>
-            <img class="img-slider" src="./pic/slider/baignoire+lavabo.jpg" style="width:300px">
-            <div class="text">Salle d'eau rénovée</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 10</div>
-            <img class="img-slider" src="./pic/slider/ancienne sdb 2.jpg" style="width:300px">
-            <div class="text">Salle de bain à rénover</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 10</div>
-            <img class="img-slider" src="./pic/slider/sdb 2 reno.jpg" style="width:300px">
-            <div class="text">Salle de bain neuve</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">5 / 10</div>
-            <img class="img-slider" src="./pic/slider/ti lavabo.jpg" style="width:300px">
-            <div class="text">lavabo obsolete</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">6 / 10</div>
-            <img class="img-slider" src="./pic/slider/ti lavabo reno.jpg" style="width:300px">
-            <div class="text">lavabo remis à neuf</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">7 / 10</div>
-            <img class="img-slider" src="./pic/slider/vasque.jpg" style="width:300px">
-            <div class="text">Ancienne vasque</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">8 / 10</div>
-            <img class="img-slider" src="./pic/slider/vasque reno.jpg" style="width:300px">
-            <div class="text">Vasque et baignoire installées</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">9 / 10</div>
-            <img class="img-slider" src="./pic/slider/salle d eau 2.jpg" style="width:300px">
-            <div class="text">Salle d'eau à remasteriser</div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">10 / 10</div>
-            <img class="img-slider" src="./pic/slider/salle d eau 2 reno.jpg" style="width:300px">
-            <div class="text">Salle d'eau neuve avec double vasque</div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-          </div>
-
-      </div>
+      </div> 
 
      </main>
   </div>
 </div>
 
-<hr>
+<hr class="mx-auto">
 
  <div class="slider-bottom">
     <div class="sliderInfinite">
@@ -232,5 +165,7 @@
 
   </footer>
 </body>
+<script src="./bootstrap/bootstrap.js"></script>
+<script src="./bootstrap/bootstrap.js.map"></script>
 <script src="mainScript.js"></script>
 </html>

@@ -13,7 +13,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".navbar").style.top = "0";
   } else {
-    document.querySelector(".navbar").style.top = "-84px";
+    document.querySelector(".navbar").style.top = "-88px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -29,7 +29,10 @@ function copy(copyId){
   document.body.removeChild(inputElement);
   
   document.getElementById("alert").style.display = "block";
+  document.getElementById("alert2").style.display = "block";
   setTimeout(function(){
       document.getElementById("alert").style.display = "none";
+      document.getElementById("alert2").style.display = "none";
   }, 1000);
 }
+

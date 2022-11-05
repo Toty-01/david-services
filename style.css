@@ -376,6 +376,16 @@ footer h3 {
   padding-right: 1rem;
 }
 /*-------------------------galerie------------------------------*/
+.bg-pic {
+  display: flex;
+  justify-content: center;
+}
+.bg-pic > img{
+  max-width: 1200px;
+  width: 100%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
 /*-------------------contact---------------------------------*/
 .content {
   text-align: center;
@@ -810,6 +820,11 @@ footer h3 {
     margin-left: 2rem;
     margin-right: 2rem;
     padding-bottom: 1rem;
+  }
+  /*--------gal-----------------*/
+  .bg-pic > img{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   /*-----------contact---------------*/
   .blocks-contact {

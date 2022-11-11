@@ -29,17 +29,18 @@ function copy(copyId){
   document.body.removeChild(inputElement);
   
   document.getElementById("alert").style.display = "block";
-  document.getElementById("alert2").style.display = "block";
   setTimeout(function(){
       document.getElementById("alert").style.display = "none";
-      document.getElementById("alert2").style.display = "none";
   }, 1000);
 }
 
-var imageUrls   = ['url("./douches-photo/sdo(3).jpg")','url("./douches-photo/sdo(2).jpg")','url("./douches-photo/sdo(5).jpg")', 
+var imageUrls   = [
+                   'url("./douches-photo/sdo(3).jpg")','url("./douches-photo/sdo(2).jpg")','url("./douches-photo/sdo(5).jpg")', 
                    'url("./douches-photo/sdo(4).jpg")', 'url("./douches-photo/sdo(8).jpg")', 'url("./douches-photo/sdo(7).jpg")', 
                    'url("./douches-photo/sdo(10).jpg")', 'url("./douches-photo/sdo(12).jpg")','url("./douches-photo/sdo(24).jpg")',
-                   'url("./douches-photo/sdo(23).jpg")', 'url("./douches-photo/sdo(26).jpg")', 'url("./douches-photo/sdo(25).jpg")']
+                   'url("./douches-photo/sdo(23).jpg")', 'url("./douches-photo/sdo(26).jpg")', 'url("./douches-photo/sdo(25).jpg")',
+                   'url("./douches-photo/peint.jpg")','url("./douches-photo/peinture.jpg")',
+                  ]
 
 var imageNumber = imageUrls.length
 
@@ -54,7 +55,7 @@ function imagePop(id){
 
     imageIndex = imageUrls.indexOf(imageName)
     
-    document.getElementsByClassName('imageContain')[0].style.animation = 'he 800ms forwards'
+    document.getElementsByClassName('imageContain')[0].style.animation = 'he 1s forwards'
 
     document.getElementsByClassName('imageContain')[0].style.backgroundImage = imageUrls[imageIndex]
 }

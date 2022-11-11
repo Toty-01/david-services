@@ -529,6 +529,7 @@ footer h3 {
     }
 }
 .click1{
+  animation: fade 2s ease-in-out;
     position: absolute;
     z-index: 14;
     top:50%;
@@ -544,13 +545,20 @@ footer h3 {
     cursor: pointer;
     color: #fff;
 }
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
 .close{
-    position: absolute;
-    z-index: 14;
-    top:12%;
-    right: 15%;
-    cursor: pointer;
-    color: #fff;
+  position: absolute;
+  z-index: 14;
+  top:12%;
+  right: 15%;
+  cursor: pointer;
+  color: #fff;
+}
+.close:hover {
+  animation: rotate-center 1s ease-in-out;
 }
 /*-------------------contact---------------------------------*/
 .content {
@@ -588,7 +596,8 @@ footer h3 {
 .block-cont {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   background-color: #91C7B1;
   padding-top: 4rem;
@@ -599,6 +608,10 @@ footer h3 {
   padding: 4rem;
   border-radius: 1rem;
   background-color: aliceblue;
+  width: 60%;
+}
+.blocks-contact:last-child {
+  margin-top: 4rem;
 }
 .com-ancre h2 {
   margin-top: 8rem !important;
@@ -708,13 +721,13 @@ footer h3 {
   justify-content: center;
   margin-bottom: 4rem;
 }
-#alert, #alert2 {
+#alert{
   width: 80%;
   text-align: center;
   background-color: #37392E;
   font-size: 1.4rem;
   color: #ffffff;
-  margin: auto;
+  margin-top: 4rem;
   left: 0;
   right: 0;
   padding: 5px 0;
@@ -742,7 +755,7 @@ footer h3 {
   font-size: 4rem;
 }
 .fa-facebook:hover {
-    animation:rotate-center .6s ease-in-out both;
+  animation:rotate-center 1s ease-in-out both;
 }
 @keyframes rotate-center {
   0% {
@@ -963,9 +976,6 @@ footer h3 {
   .Services-foot, .Contact-foot,.Horaires-foot {
     margin-bottom: 2rem;
   }
-  .mySlides.fade {
-    width: fit-content;
-  }
   .slider-bottom {
     width: auto;
     height: auto;
@@ -1041,24 +1051,27 @@ footer h3 {
     border-radius: 1rem;
   }
   .click1{
-      top:50%;
-      left: 8%;
+    top:50%;
+    left: 8%;
   }
   .click2{
-      top:50%;
-      right: 8%;
+    top:50%;
+    right: 8%;
   }
   .close{
-      top:12%;
-      right: 5%;
+    top:12%;
+    right: 5%;
   }
   .gal-title h2 {
     font-size: 3rem;
     margin: 3rem !important;
   }
   /*-----------contact---------------*/
-  .blocks-contact {
+  .block-cont {
     width: 100%;
+  }
+  .blocks-contact {
+    width: 90%;
     margin: 2%;
     padding-left: 0;
     padding-right: 0;

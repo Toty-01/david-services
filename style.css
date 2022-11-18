@@ -83,6 +83,13 @@ a, p, li {
 h1, h2 {
   text-align: center;
 }
+.titre {
+  background-image: url(./pic/bg-pic/sdb.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .titre > h1 {
   font-family: 'Audiowide', sans-serif;
   color: #282c34;
@@ -90,16 +97,10 @@ h1, h2 {
   padding-top: 15rem;
   font-weight: 500;
   text-align: left;
-  margin-left: 12%;
-}
-.titre {
-  background-color: #ff8c11;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin-left: 30%;
 }
 .titre h2 {
-  margin-top: 8rem;
+  margin-top: 6rem;
   font-size: 4rem;
   font-weight: 600;
   color: #282c34;
@@ -137,6 +138,7 @@ hr {
   width: 100%;
 }
 .main-content h2, .contenu2 h2, .gal-title h2, .content h2:first-child {
+  cursor: default;
   font-size: 3.6rem;
   padding-top: 6rem !important;
   padding-bottom: 6rem !important;
@@ -175,7 +177,7 @@ hr {
   top: -17rem;
   color: #FFF;
   text-shadow: 1px 1px #91C7B1;
-  background-color: #37392e6b;
+  background-color: #37392e7b;
   padding: 1rem;
   border-radius: 0.4rem;
 }
@@ -183,7 +185,7 @@ hr {
   font-size: 1.8rem;
   color: #FFF;
   text-shadow: 1px 1px #91C7B1;
-  background-color: #37392e44;
+  background-color: #37392e5e;
   border-radius: 1rem;
   width: fit-content;
   padding: 1rem;
@@ -750,6 +752,7 @@ footer h3 {
   background-color: #009dff98;
 }
 .carousel-caption > a:hover {
+  transition: all .5s;
   background-color: #91c7b196;
   color: #ececec;
 }
@@ -1032,27 +1035,25 @@ button.btn.btn-primary {
   }
   .titre > h1 {
     font-size: 3.6rem;
-    color: #282c34;
-    text-shadow: 0 0;
     height: 100vh;
-    padding-top: 16rem;
+    padding-top: 10rem;
     font-weight: 500;
-    object-fit: cover;
     text-align: center;
     margin-left: 0;
   }
   .titre {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
     height: 101vh;
   }
+  .titre {
+    background-position: 59%;
+  }
   .titre span {
-    margin-left: 0;
     font-size: 3.6rem;
   }
   .titre h2 {
-    margin-top: -15rem;
+    margin-top: -7rem;
     font-size: 3.2rem;
+
   }
   main {
     display: block;
@@ -1063,12 +1064,22 @@ button.btn.btn-primary {
   .carousel {
     width: 100%;
   }
+  .carousel-item img {
+    height: 82vh;
+    border-radius: 0.4rem;
+  }
+  .carousel-item:first-child img {
+    object-position: 100%;
+  }
+  .cuisine-img {
+    object-position: 20%;
+  }
   .carousel > img {
     width: 100%;
   }
   .carousel-caption > h5 {
     font-size: 1.8rem !important;
-    top: -16rem;
+    top: -17rem;
   }
   .carousel-caption > p {
     font-size: 1.2rem;
@@ -1111,10 +1122,10 @@ button.btn.btn-primary {
     font-size: 2rem;
     justify-content: center;
   }
-  .main-content h2, .contenu2 > h2 {
+  .main-content h2, .contenu2 h2, .gal-title h2, .content h2:first-child {
     font-size: 3rem;
-    padding: 0;
-    margin-top: 3rem;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
     margin-bottom: 3rem;
   }
   .main-content h2::after, .contenu2 h2::after, .gal-title h2::after, .content h2:first-child::after, .cont-titles::after {
@@ -1197,7 +1208,7 @@ button.btn.btn-primary {
     border-top-right-radius: 0;
     min-height: 250px;
     object-fit: cover;
-    object-position: 100%;
+    object-position: 95%;
   }  
   .image {
     min-width: 280px;

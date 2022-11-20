@@ -93,7 +93,7 @@ h1, h2 {
 .titre > h1 {
   font-family: 'Audiowide', sans-serif;
   color: #282c34;
-  text-shadow: 2px 2px #91C7B1;
+  text-shadow: 1.5px 1.5px #91C7B1;
   padding-top: 15rem;
   font-weight: 500;
   text-align: left;
@@ -104,7 +104,7 @@ h1, h2 {
   font-size: 4rem;
   font-weight: 600;
   color: #282c34;
-  text-shadow: 2px 2px #91C7B1;
+  text-shadow: 1.5px 1.5px #91C7B1;
   letter-spacing: 0.1rem;
 }
 h2 {
@@ -528,7 +528,9 @@ footer h3 {
     padding-left: 7%;
     font-size: 18px;
     line-height: 15px;
-    color:rgb(184, 180, 180);
+    font-weight: 600;
+    color:#fff;
+    text-shadow: 2px 2px black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .image-text h4{
@@ -540,7 +542,7 @@ footer h3 {
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 .image-text div i{
     font-size: 15px;
@@ -1219,7 +1221,7 @@ button.btn.btn-primary {
   }
   .imageContain{
     position: relative;
-    top: 10%;
+    top: 7%;
     width: 70%;
     height: 80vh;
     z-index: 12;

@@ -1016,10 +1016,13 @@ button.btn.btn-primary {
     transform: translateX(0);
   }
   .show-nav .slideInDown-1 {
-    animation: effect 1.2s ease-in-out;
+    animation: effect 1s ease-in-out;
   }
   .show-nav .slideInDown-2 {
-    animation: effect 1.8s ease-in-out;
+    animation: effect 1.5s ease-in-out;
+  }
+  .show-nav .slideInDown-3 {
+    animation: effect 2s ease-in-out;
   }
   @keyframes effect {
     0% {
@@ -1055,7 +1058,6 @@ button.btn.btn-primary {
   .titre h2 {
     margin-top: -7rem;
     font-size: 3.2rem;
-
   }
   main {
     display: block;

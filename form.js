@@ -54,18 +54,6 @@ function validateEmail(input) {
     return !(POSAT < 1 || (POSDOT - POSAT < 2));
 }
 
-/*
-// Validation Code Postal
-function validatePostCode(input) {
-    return input.value.match("^(0[1-9]|[1-9][0-9])[0-9][0-9][0-9]$");
-}
-
-// Validation Adresse
-function validateAddress(input) {
-    return input.value.match(/^\s*\S+(?:\s+\S+){2}/);
-}
-*/
-
 // Validation du Numéro de téléphone
 function validatePhoneNumber(input) {
     return input.value.match(/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/);
@@ -86,15 +74,12 @@ function validateFields(input) {
         if (!validateRequired(input)) {
             return false;
         }
-
         if (!validateLenght(input, 2, 20)) {
             return false;
         }
-
         if (!validateText(input)) {
             return false;
         }
-
         return (true);
     }
 
@@ -103,29 +88,23 @@ function validateFields(input) {
         if (!validateRequired(input)) {
             return false;
         }
-
         if (!validateLenght(input, 2, 20)) {
             return false;
         }
-
         if (!validateText(input)) {
             return false;
         }
-
         return (true);
     }
 
     // Validaton de l'input EMAIL
     if (fieldName == "email") {
-
         if (!validateRequired(input)) {
             return false;
         }
-
         if (!validateEmail(input)) {
             return false;
         }
-
         return (true);
     }
 
@@ -134,11 +113,9 @@ function validateFields(input) {
         if (!validateRequired(input)) {
             return false;
         }
-
         if (!validatePhoneNumber(input)) {
             return false;
         }
-
         return (true);
     }
 
@@ -148,11 +125,9 @@ function validateFields(input) {
         if (!validateRequired(input)) {
             return false;
         }
-    
         if (!validateLenght(input, 2, 300)) {
             return false;
         }
-
         return (true);
     }
     // Validaton de l'input prestation
@@ -160,7 +135,6 @@ function validateFields(input) {
         if (!validateRequired(input)) {
             return false;
         }
-
         return (true);
     }
 
@@ -169,7 +143,6 @@ function validateFields(input) {
         if (!validateTerms(input)) {
             return false;
         }
-
         return (true);
     }
 }

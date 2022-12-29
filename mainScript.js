@@ -34,15 +34,15 @@ function copy(copyId){
   }, 1000);
 }
 
-var imageUrls   = [
-                   'url("./douches-photo/sdo(3).jpg")','url("./douches-photo/sdo(2).jpg")',
-                   'url("./douches-photo/peint.jpg")','url("./douches-photo/peinture.jpg")', 
-                   'url("./douches-photo/sdo(8).jpg")', 'url("./douches-photo/sdo(7).jpg")', 
-                   'url("./douches-photo/sdo(10).jpg")', 'url("./douches-photo/sdo(12).jpg")',
-                   'url("./douches-photo/sdo(24).jpg")','url("./douches-photo/sdo(23).jpg")', 
-                   'url("./douches-photo/sdo(26).jpg")', 'url("./douches-photo/sdo(25).jpg")',
-                   'url("./douches-photo/sdo(5).jpg")', 'url("./douches-photo/sdo(4).jpg")',
-                  ]
+var imageUrls = [
+    'url("./douches-photo/sdo(3).jpg")','url("./douches-photo/sdo(2).jpg")',
+    'url("./douches-photo/peint.jpg")', 'url("./douches-photo/peinture.jpg")', 
+    'url("./douches-photo/sdo(8).jpg")', 'url("./douches-photo/sdo(7).jpg")', 
+    'url("./douches-photo/sdo(10).jpg")', 'url("./douches-photo/sdo(12).jpg")',
+    'url("./douches-photo/sdo(24).jpg")','url("./douches-photo/sdo(23).jpg")', 
+    'url("./douches-photo/sdo(26).jpg")', 'url("./douches-photo/sdo(25).jpg")',
+    'url("./douches-photo/sdo(5).jpg")', 'url("./douches-photo/sdo(4).jpg")',
+  ]
 
 var imageNumber = imageUrls.length
 
@@ -53,14 +53,13 @@ function imagePop(id){
 
     var imageName = document.getElementById(id + '-image').style.backgroundImage
 
-    var imageIndex = 0
+    let imageIndex = 0
 
     imageIndex = imageUrls.indexOf(imageName)
-    
     document.getElementsByClassName('imageContain')[0].style.animation = 'he 1s forwards'
 
     document.getElementsByClassName('imageContain')[0].style.backgroundImage = imageUrls[imageIndex]
-}
+  }
 function imageChange(id){
 
     var imageName = document.getElementById(id).style.backgroundImage
@@ -73,7 +72,6 @@ function imageChange(id){
     imageIndex = 0
     else
     imageIndex++
-
     document.getElementById(id).style.backgroundImage = imageUrls[imageIndex]
 }
 function imageMoveLeft(){
@@ -91,7 +89,7 @@ function imageMoveLeft(){
 
     document.getElementById('imageContainId').style.backgroundImage = imageUrls[imageIndex];
 }
-function imageMoveRight(){
+function imageMoveRight() {
 
     var imageName = document.getElementById('imageContainId').style.backgroundImage
 
@@ -105,7 +103,7 @@ function imageMoveRight(){
     imageIndex++
 
     document.getElementById('imageContainId').style.backgroundImage = imageUrls[imageIndex]
-}
+  }
 function imagePopNone(){
 
     document.getElementsByClassName('imagePop')[0].style.display = 'none'

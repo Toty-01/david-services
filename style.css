@@ -497,7 +497,7 @@ footer h3 {
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
 }
-.imagesContainer   {
+.imagesContainer {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -506,7 +506,7 @@ footer h3 {
     margin-bottom: 2rem;
     background-color: rgba(225, 220, 245, 0.308);
 }
-.image{
+.image {
     display: flex;
     flex-wrap: wrap;
     width: 350px;
@@ -524,7 +524,7 @@ footer h3 {
     height: 100%;
     z-index: 4;
 }
-.image-text p{
+.image-text p {
     position: relative;
     top:87%;
     padding-left: 7%;
